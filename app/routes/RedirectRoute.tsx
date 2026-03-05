@@ -1,7 +1,7 @@
 import { redirect } from "react-router";
 
 export async function loader(){
-    return redirect('/sign_up')
+    return redirect('/Auth')
 }
 
 const RedirectRoute = () => {
