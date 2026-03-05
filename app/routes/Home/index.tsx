@@ -4,5 +4,5 @@ export default function Home() {
     <div>
       {/* Your sign up form */}
     </div>
-  );
+  )
 }
