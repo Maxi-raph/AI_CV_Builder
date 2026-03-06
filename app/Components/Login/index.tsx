@@ -14,7 +14,7 @@ export default function Login() {
     [])
 
   return (
-    <section className={`translate duration-500 p-6 pt-10 relative z-8 translate-x-0 ${transition ?'sm:-translate-x-[100%] opacity-100': 'translate-x-0 opacity-0'}`}>
+    <section className={`translate duration-500 p-6 pt-10 relative z-8 ${transition ?'sm:-translate-x-[100%] opacity-100': 'translate-x-[100%] sm:translate-x-0 opacity-0'}`}>
         <h2 className="text-emerald-400 font-bold text-center text-xl sm:text-2xl md:text-3xl">Sign in to Diprella</h2>
         <div className='flex w-full justify-center gap-4 mt-4 mb-4'>
           <a href="#">
