@@ -14,7 +14,7 @@ const OnboardingLayout = () => {
                 <div className={`hidden sm:flex flex-col relative z-10 pt-24 items-center gap-5 h-full w-[90%] bg-emerald-500 translate duration-500 p-4 
                      ${transition ? 'translate-x-[131%] rounded-tr-xl rounded-br-xl' : 'translate-x-[0%] rounded-tl-xl rounded-bl-xl'}`}>
                     <h2 className='text-white text-xl sm:text-2xl md:text-3xl font-bold'>{isSignedUp ? 'Hello Friend!' : 'Welcome Back!'}</h2>
-                    <p className='text-gray-100 max-w-[260px] mt-1 text-center leading-relaxed'>{isSignedUp ? 'Enter your personal details and start your journey with us' : 'To keep connected with us please log in with your personal info'}</p>
+                    <p className='text-gray-100 max-w-65 mt-1 text-center leading-relaxed'>{isSignedUp ? 'Enter your personal details and start your journey with us' : 'To keep connected with us please log in with your personal info'}</p>
                     {isSignedUp 
                     ? 
                     ( <button  onClick={(e)=>{
@@ -31,6 +31,7 @@ const OnboardingLayout = () => {
                     className="text-white border mt-4 border-white cursor-pointer px-12 py-2 w-44 rounded-3xl mx-auto block text-center"> Sign In </button>  
                     )
                     }
+                    
                 </div>
                 {!isSignedUp ? <SignUp /> : <Login /> } 
             </section>
